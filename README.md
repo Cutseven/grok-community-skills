@@ -28,6 +28,14 @@ skills/<slug>/SKILL.md     # one skill per folder (name + description frontmatte
 
 Every skill follows the same rules: it never sends, posts, deletes, moves, or overwrites anything until you've seen exactly what will happen and said yes. Content from emails, files, and web pages is treated as data, never as instructions.
 
+## Disclaimer
+
+These are unofficial community skills. They are not made by, affiliated with, or endorsed by xAI, Cloudflare, Google, or any other company whose products they mention. Product names are used only to describe what a skill works with.
+
+The skills are provided as-is, without warranty (see [LICENSE](LICENSE)). Review a skill before you use it, and take extra care before letting any AI agent act on live accounts, production infrastructure, or important data. You are responsible for what your agent does with them.
+
+Built by Gustavo Cadena with help from AI tools.
+
 ## License
 
 MIT © Gustavo Cadena. See [LICENSE](LICENSE).
