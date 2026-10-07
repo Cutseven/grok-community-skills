@@ -1,10 +1,10 @@
 {
   "name": "grok-community-skills",
-  "version": "1.0.0",
-  "description": "Nine free community skills for everyday productivity: inbox triage, file finding, meeting scheduling, subscription tracking, meal planning, backups, task capture, translation/summarising, and batch file operations.",
+  "version": "1.1.0",
+  "description": "Ten free community skills for everyday productivity: inbox triage, file finding, meeting scheduling, subscription tracking, meal planning, backups, task capture, translation/summarising, batch file operations, and safe Cloudflare infrastructure management.",
   "author": { "name": "Gustavo Cadena" },
   "homepage": "https://github.com/Cutseven/grok-community-skills",
   "repository": "https://github.com/Cutseven/grok-community-skills",
   "license": "MIT",
-  "keywords": ["productivity", "email", "files", "calendar", "tasks", "translation", "backup"]
+  "keywords": ["productivity", "email", "files", "calendar", "tasks", "translation", "backup", "cloudflare"]
 }

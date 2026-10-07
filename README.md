@@ -1,6 +1,6 @@
 # Grok Community Skills
 
-Nine free, MIT-licensed agent skills for Grok Build. They are instructions only: no MCP servers, no hooks, no scripts. Each skill uses whatever tools your agent already has (email/calendar connectors, file access, shell) and asks before doing anything irreversible.
+Ten free, MIT-licensed agent skills for Grok Build. They are instructions only: no MCP servers, no hooks, no scripts. Each skill uses whatever tools your agent already has (email/calendar connectors, file access, shell) and asks before doing anything irreversible.
 
 | Skill | What it does |
 |---|---|
@@ -13,6 +13,7 @@ Nine free, MIT-licensed agent skills for Grok Build. They are instructions only:
 | `one-command-task-capturer` | Turns one sentence into a structured task, catches duplicates, runs a weekly review |
 | `context-translator-summarizer` | Translates for meaning, then gives a bullet summary and glossary |
 | `batch-task-runner` | Chains rename/convert/resize/compress/zip jobs, with a dry-run preview first |
+| `cloudflare-infra-worker` | Read-first Cloudflare engineer: DNS, Workers/Pages, WAF, SSL/TLS, Tunnel/Access; changes only in EXECUTE mode, with previews, rollback plans and explicit confirmation for destructive actions |
 
 ## Install
 
