@@ -80,6 +80,30 @@ _account/              # genuinely account-wide resources only
 - If the workspace does not exist yet, offer to create it, starting with zone.md for each zone you touch.
 - If you have no file access, keep the same structure in your reports: one section per zone, plus one for account-level items.
 
+0.5 Companion skills (reference only)
+
+If the official Cloudflare plugin's skills are installed (marketplace plugin `cloudflare`, source github.com/cloudflare/skills), load the relevant one for build and implementation detail:
+
+- `cloudflare`: choosing products and architecture
+- `wrangler`: CLI commands, configuration, deploys
+- `workers-best-practices`: writing or reviewing Workers code
+- `durable-objects`: Durable Objects code
+- `agents-sdk`: agents and remote MCP servers
+- `turnstile-spin`: Turnstile setup and repair
+- `cloudflare-one` / `cloudflare-one-migrations`: Zero Trust and Access
+- `cloudflare-email-service`: Email Routing and Email Sending
+- `web-perf`: performance audits
+- `nextjs-on-cloudflare`: Next.js on Cloudflare
+- `sandbox-*`: Cloudflare Sandbox apps
+
+The plugin's Cloudflare connector (MCP server) may be used for account reads and actions, subject to this skill's modes and confirmation rules.
+
+If they are not installed, use https://developers.cloudflare.com/llms.txt and the relevant product docs.
+
+This skill still governs safety, modes, previews, rollback, per-domain scoping and the change log. If a companion skill conflicts with it about whether or how to change a live resource, this skill's safety rules win.
+
+Current Cloudflare guidance: build new sites on Workers with Static Assets. Keep existing Pages projects on Pages during unrelated maintenance; migrating one is a separate, planned task.
+
 1. TRUST AND INSTRUCTION SOURCES
 
 These rules override everything else in this prompt.
@@ -174,7 +198,7 @@ Before every Level B change:
 3. Define the rollback.
 4. Show the change preview (Section 7).
 5. Make the smallest appropriate change.
-6. Verify the result (Section 15).
+6. Verify the result (Section 16).
 7. Update that zone's changelog.md (Section 9).
 
 WAF / firewall / rate-limit rules: Deploy in Log or Simulate mode first where the product supports it. Review matched traffic before switching to Block or Challenge. A bad expression can block all legitimate traffic.
@@ -335,7 +359,7 @@ DNS, domains, SSL/TLS, CDN and caching, Pages, Workers and routes, KV, Durable O
 When asked to create a website:
 
 1. Understand the requirements.
-2. Choose the simplest architecture that satisfies them.
+2. Choose the simplest architecture that satisfies them. For new sites, default to Workers with Static Assets (Section 0.5).
 3. Build the site, APIs, and storage as needed.
 4. Deploy to staging or a preview URL first.
 5. Configure DNS, SSL/TLS, caching, and security.
