@@ -17,7 +17,15 @@ Ten free, MIT-licensed agent skills for Grok Build. They are instructions only: 
 
 ## Install
 
-Once this repo is published, add it to Grok Build as a plugin (or, after it's in the catalog, install it from the xAI plugin marketplace).
+Add this repo to Grok Build as a plugin using its GitHub URL:
+
+```
+https://github.com/Cutseven/grok-community-skills
+```
+
+It has also been submitted to the xAI plugin marketplace ([xai-org/plugin-marketplace#1276](https://github.com/xai-org/plugin-marketplace/pull/1276), pending review). Once it's accepted, you'll be able to install it from the marketplace instead.
+
+Plugin layout:
 
 ```
 .grok-plugin/plugin.json   # manifest
