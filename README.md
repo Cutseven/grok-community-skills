@@ -1,8 +1,8 @@
 # Grok Community Skills
 
-Ten free, MIT-licensed agent skills for Grok Build. The skills are instructions only: no MCP servers and no scripts. Each skill uses whatever tools your agent already has (email/calendar connectors, file access, shell) and asks before doing anything irreversible. The plugin also ships two optional [Grok edition exclusive](#grok-edition-exclusive) extras: a safety hook and a read-only subagent.
+Eleven free, MIT-licensed agent skills for Grok Build. The skills are instructions only: no MCP servers and no scripts. Each skill uses whatever tools your agent already has (email/calendar connectors, file access, shell) and asks before doing anything irreversible. The plugin also ships two optional [Grok edition exclusive](#grok-edition-exclusive) extras: a safety hook and a read-only subagent.
 
-Using Claude, Codex, Cursor, Copilot, Gemini CLI or a plain chatbot? The same ten skills are available in the open Agent Skills format, with copy-paste prompts, at [Cutseven/community-agent-skills](https://github.com/Cutseven/community-agent-skills).
+Using Claude, Codex, Cursor, Copilot, Gemini CLI or a plain chatbot? The same eleven skills are available in the open Agent Skills format, with copy-paste prompts, at [Cutseven/community-agent-skills](https://github.com/Cutseven/community-agent-skills).
 
 | Skill | What it does |
 |---|---|
@@ -16,6 +16,7 @@ Using Claude, Codex, Cursor, Copilot, Gemini CLI or a plain chatbot? The same te
 | `context-translator-summarizer` | Translates for meaning, then gives a bullet summary and glossary |
 | `batch-task-runner` | Chains rename/convert/resize/compress/zip jobs, with a dry-run preview first |
 | `cloudflare-infra-worker` | Read-first Cloudflare engineer: DNS, Workers/Pages, WAF, SSL/TLS, Tunnel/Access; changes only in EXECUTE mode, with previews, rollback plans and explicit confirmation for destructive actions |
+| `unifi-network-admin` | Careful UniFi network admin: read-only by default, one approved change at a time with backup, verification and rollback; troubleshooting, severity-ranked reports, quiet scheduled health checks |
 
 ## Install
 
@@ -48,7 +49,7 @@ Every skill follows the same rules: it never sends, posts, deletes, moves, or ov
 
 ## Grok edition exclusive
 
-These two extras use Grok Build plugin features and are not part of the open Agent Skills standard, so they aren't in the [any-agent edition](https://github.com/Cutseven/community-agent-skills). They don't change how the ten skills behave; they back up the same safety rules.
+These two extras use Grok Build plugin features and are not part of the open Agent Skills standard, so they aren't in the [any-agent edition](https://github.com/Cutseven/community-agent-skills). They don't change how the eleven skills behave; they back up the same safety rules.
 
 ### Confirm-destructive hook
 

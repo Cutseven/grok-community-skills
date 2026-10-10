@@ -1,10 +1,10 @@
 {
   "name": "grok-community-skills",
-  "version": "1.2.0",
-  "description": "Ten free community skills for everyday productivity: inbox triage, file finding, meeting scheduling, subscription tracking, meal planning, backups, task capture, translation/summarising, batch file operations, and safe Cloudflare infrastructure management. Grok edition extras: a hook that asks before destructive shell commands and a read-only subagent for untrusted content.",
+  "version": "1.3.0",
+  "description": "Eleven free community skills for everyday productivity: inbox triage, file finding, meeting scheduling, subscription tracking, meal planning, backups, task capture, translation/summarising, batch file operations, safe Cloudflare infrastructure management, and careful UniFi network administration. Grok edition extras: a hook that asks before destructive shell commands and a read-only subagent for untrusted content.",
   "author": { "name": "Gustavo Cadena" },
   "homepage": "https://github.com/Cutseven/grok-community-skills",
   "repository": "https://github.com/Cutseven/grok-community-skills",
   "license": "MIT",
-  "keywords": ["productivity", "email", "files", "calendar", "tasks", "translation", "backup", "cloudflare"]
+  "keywords": ["productivity", "email", "files", "calendar", "tasks", "translation", "backup", "cloudflare", "unifi", "network"]
 }
